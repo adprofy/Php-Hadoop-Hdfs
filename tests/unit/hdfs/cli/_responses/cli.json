@@ -1,0 +1,52 @@
+{
+    "info" : {
+        "stdout"   : "Moved: 'hdfs://nameservice1/tmp/somedirmk' to trash at: hdfs://nameservice1/user/akuzmenko/.Trash/Current",
+        "stderr"   : "15/04/01 13:51:03 INFO fs.TrashPolicyDefault: Namenode trash configuration: Deletion interval = 1440 minutes, Emptier interval = 0 minutes.",
+        "exitCode" : 0
+    },
+    "notice" : {
+        "stdout"   : "Moved: 'hdfs://nameservice1/tmp/somedirmk' to trash at: hdfs://nameservice1/user/akuzmenko/.Trash/Current",
+        "stderr"   : "15/04/01 13:51:03 NOTICE fs.TrashPolicyDefault: Namenode trash configuration: Deletion interval = 1440 minutes, Emptier interval = 0 minutes.",
+        "exitCode" : 0
+    },
+    "not_found" : {
+        "stdout"   : "",
+        "stderr"   : "ls: `/tmp/unknowndir': No such file or directory",
+        "exitCode" : 1
+    },
+    "permission_denied" : {
+        "stdout"   : "",
+        "stderr"   : "ls: Permission denied: user=akuzmenko, access=EXECUTE, inode=\"/tmp/somedirmk\":akuzmenko:hdfs:d---------",
+        "exitCode" : 1
+    },
+    "already_exists" : {
+        "stdout"   : "",
+        "stderr"   : "mkdir: `/tmp/somedirmk': File exists",
+        "exitCode" : 1
+    },
+    "illegal_argument" : {
+        "stdout"   : "",
+        "stderr"   : "rmdir: `/tmp/somedirmk/file': Is not a directory",
+        "exitCode" : 1
+    },
+    "unknown_error" : {
+        "stdout"   : "",
+        "stderr"   : "abrakadabra I DO NOT KNOW WHAT IS THIS kadabraabra",
+        "exitCode" : 1
+    },
+    "not_empty" : {
+        "stdout"   : "",
+        "stderr"   : "rmdir: `/tmp/somedirmk': Directory is not empty",
+        "exitCode" : 1
+    },
+    "no_errors" : {
+        "stdout"   : "",
+        "stderr"   : "",
+        "exitCode" : 0
+    },
+    "permission_not_root" : {
+        "stdout"   : "",
+        "stderr"   : "chown: changing ownership of '/tmp/hdfs_cli_testDir/sub': Non-super user cannot change owner",
+        "exitCode" : 1
+    }
+}

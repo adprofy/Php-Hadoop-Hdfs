@@ -1,0 +1,86 @@
+{
+    "not_found" : {
+        "body" : "{\"RemoteException\":{\"message\":\"File does not exist: \\\/tmp\\\/hdfs_cli_testDir\",\"exception\":\"FileNotFoundException\",\"javaClassName\":\"java.io.FileNotFoundException\"}}",
+        "info" : {
+            "http_code"    : 500,
+            "content_type" : "application/json"
+        }
+    },
+    "putFile_success" : {
+        "body" : "",
+        "info" : {
+            "http_code"    : 201,
+            "content_type" : "application/json"
+        }
+    },
+    "chmod_success" : {
+        "body" : "",
+        "info" : {
+            "http_code"    : 200,
+            "content_type" : "application/json"
+        }
+    },
+    "chown_success" : {
+        "body" : "",
+        "info" : {
+            "http_code"    : 200,
+            "content_type" : "application/json"
+        }
+    },
+    "mkdir_success" : {
+        "body" : "",
+        "info" : {
+            "http_code"    : 200,
+            "content_type" : "application/json"
+        }
+    },
+    "rename_success" : {
+        "body" : "{\"boolean\": true}",
+        "info" : {
+            "http_code"    : 200,
+            "content_type" : "application/json"
+        }
+    },
+    "getFile_success" : {
+        "body" : "hello, hdfs",
+        "info" : {
+            "http_code"    : 200,
+            "content_type" : "application/octet-stream"
+        }
+    },
+    "remove_success" : {
+        "body" : "{\"boolean\": true}",
+        "info" : {
+            "http_code"    : 200,
+            "content_type" : "application/json"
+        }
+    },
+    "setReplication_success" : {
+        "body" : "{\"boolean\": true}",
+        "info" : {
+            "http_code"    : 200,
+            "content_type" : "application/json"
+        }
+    },
+    "liststatus_success" : {
+        "body" : "{\"FileStatuses\":{\"FileStatus\":[{\"pathSuffix\":\"file.txt\",\"type\":\"FILE\",\"length\":0,\"owner\":\"akuzmenko\",\"group\":\"hdfs\",\"permission\":\"644\",\"accessTime\":1428069362259,\"modificationTime\":1428069362271,\"blockSize\":134217728,\"replication\":3},{\"pathSuffix\":\"sub\",\"type\":\"DIRECTORY\",\"length\":0,\"owner\":\"akuzmenko\",\"group\":\"hdfs\",\"permission\":\"755\",\"accessTime\":0,\"modificationTime\":1428069352607,\"blockSize\":0,\"replication\":0}]}}",
+        "info" : {
+            "http_code"    : 200,
+            "content_type" : "application/json"
+        }
+    },
+    "stat_file" : {
+        "body" : "{\"FileStatus\":{\"pathSuffix\":\"\",\"type\":\"FILE\",\"length\":11,\"owner\":\"test\",\"group\":\"hdfs\",\"permission\":\"755\",\"accessTime\":1427994123369,\"modificationTime\":1427994123442,\"blockSize\":134217728,\"replication\":3}}",
+        "info" : {
+            "http_code"    : 200,
+            "content_type" : "application/json"
+        }
+    },
+    "stat_directory" : {
+        "body" : "{\"FileStatus\":{\"pathSuffix\":\"\",\"type\":\"DIRECTORY\",\"length\":0,\"owner\":\"test\",\"group\":\"hdfs\",\"permission\":\"777\",\"accessTime\":0,\"modificationTime\":1428001901671,\"blockSize\":0,\"replication\":0}}",
+        "info" : {
+            "http_code"    : 200,
+            "content_type" : "application/json"
+        }
+    }
+}

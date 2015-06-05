@@ -1,0 +1,22 @@
+<phpunit
+    colors                                  = "true"
+    convertErrorsToExceptions               = "true"
+    convertNoticesToExceptions              = "true"
+    convertWarningsToExceptions             = "true"
+    beStrictAboutTestsThatDoNotTestAnything = "true"
+    beStrictAboutTestSize                   = "true"
+ >
+    <php>
+        <ini name="error_reporting" value="32767"/>
+    </php>
+    <groups>
+        <exclude>
+            <group>integration</group>
+        </exclude>
+    </groups>
+    <testsuites>
+        <testsuite name="lib-unit">
+            <directory suffix="Test.php">./unit/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

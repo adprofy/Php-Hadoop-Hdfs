@@ -1,0 +1,95 @@
+{
+    "isExists_true" : {
+        "stdout"   : "",
+        "stderr"   : "",
+        "exitCode" : 0
+    },
+    "isExists_false" : {
+        "stdout"   : "",
+        "stderr"   : "",
+        "exitCode" : 1
+    },
+    "is_directory_true" : {
+        "stdout"   : "",
+        "stderr"   : "",
+        "exitCode" : 0
+    },
+    "is_directory_false" : {
+        "stdout"   : "",
+        "stderr"   : "",
+        "exitCode" : 1
+    },
+    "putFile_success" : {
+        "stdout"   : "",
+        "stderr"   : "",
+        "exitCode" : 0
+    },
+    "mkdir_success" : {
+        "stdout"   : "",
+        "stderr"   : "",
+        "exitCode" : 0
+    },
+    "rmdir_success" : {
+        "stdout"   : "",
+        "stderr"   : "",
+        "exitCode" : 0
+    },
+    "mv_success" : {
+        "stdout"   : "",
+        "stderr"   : "",
+        "exitCode" : 0
+    },
+    "getmerge_success" : {
+        "stdout"   : "",
+        "stderr"   : "",
+        "exitCode" : 0
+    },
+    "chmod_success" : {
+        "stdout"   : "",
+        "stderr"   : "",
+        "exitCode" : 0
+    },
+    "chown_success" : {
+        "stdout"   : "",
+        "stderr"   : "",
+        "exitCode" : 0
+    },
+    "count" : {
+        "stdout"   : "           1            2                 15 /tmp/hdfs_cli_testDir",
+        "stderr"   : "",
+        "exitCode" : 0
+    },
+    "is_not_directory" : {
+        "stdout"   : "",
+        "stderr"   : "rmdir: `/tmp/hdfs_cli_testDir/file.txt': Is not a directory"
+    },
+    "is_not_directory_parent" : {
+        "stdout"   : "",
+        "stderr"   : "mkdir: Parent path is not a directory: /tmp/hdfs_cli_testDir hdfs_cli_testDir"
+    },
+    "ls_on_file" : {
+        "stdout"   : "-rwxr-xr-x   1 akuzmenko hdfs          0 2015-04-01 15:47 /tmp/hdfs_cli_testDir/file.txt\n",
+        "stderr"   : "",
+        "exitCode" : 0
+    },
+    "ls_success" : {
+        "stdout"   : "Found 2 items\n-rwxr-xr-x   3 akuzmenko hdfs          0 2015-04-01 15:47 /tmp/hdfs_cli_testDir/file.txt\ndrw-r--r--   - akuzmenko hdfs          0 2015-04-01 15:45 /tmp/hdfs_cli_testDir/sub\n",
+        "stderr"   : "",
+        "exitCode" : 0
+    },
+    "setReplication_success" : {
+        "stdout"   : "Replication 10 set: /tmp/hdfs_cli_testDir/file.txt",
+        "stderr"   : "",
+        "exitCode" : 1
+    },
+    "getFile_success" : {
+        "stdout"   : "",
+        "stderr"   : "",
+        "exitCode" : 0
+    },
+    "removeFile_success" : {
+        "stdout"   : "Moved: 'hdfs://nameservice1/tmp/hdfs_cli_testDir/file.txt' to trash at: hdfs://nameservice1/user/akuzmenko/.Trash/Current",
+        "stderr"   : "15/04/01 15:20:02 INFO fs.TrashPolicyDefault: Namenode trash configuration: Deletion interval = 1440 minutes, Emptier interval = 0 minutes.",
+        "exitCode" : 0
+    }
+}

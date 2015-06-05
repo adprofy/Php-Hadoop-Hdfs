@@ -1,0 +1,34 @@
+{
+    "already_exists" : {
+        "body" : "{\"RemoteException\":{\"message\":\"\\\/tmp\\\/hdfs_cli_testDir\\\/file.txt for client 46.105.112.39 already exists\",\"exception\":\"FileAlreadyExistsException\",\"javaClassName\":\"org.apache.hadoop.fs.FileAlreadyExistsException\"}}",
+        "info" : {
+            "http_code"    : 500,
+            "redirect_url" : "",
+            "content_type" : "application/json"
+        }
+    },
+    "permission_denied" : {
+        "body" : "{\"RemoteException\":{\"message\":\"Permission denied: user=test, access=EXECUTE, inode=\\\"\\\/tmp\\\/hdfs_cli_testDir\\\":akuzmenko:hdfs:d---------\",\"exception\":\"AccessControlException\",\"javaClassName\":\"org.apache.hadoop.security.AccessControlException\"}}",
+        "info" : {
+            "http_code"    : 500,
+            "redirect_url" : "",
+            "content_type" : "application/json"
+        }
+    },
+    "not_found" : {
+        "body" : "{\"RemoteException\":{\"message\":\"File does not exist: \\\/tmp\\\/somedirno\",\"exception\":\"FileNotFoundException\",\"javaClassName\":\"java.io.FileNotFoundException\"}}",
+        "info" : {
+            "http_code"    : 500,
+            "redirect_url" : "",
+            "content_type" : "application/json"
+        }
+    },
+    "not_empty" : {
+        "body" : "{\"RemoteException\":{\"message\":\"`\\\/tmp\\\/hdfs_cli_testDir is non empty': Directory is not empty\",\"exception\":\"RemoteException\",\"javaClassName\":\"org.apache.hadoop.ipc.RemoteException\"}}",
+        "info" : {
+            "http_code"    : 500,
+            "redirect_url" : "",
+            "content_type" : "application/json"
+        }
+    }
+}
