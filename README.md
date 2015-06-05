@@ -1,4 +1,4 @@
-PHP-HDFS
+PHP-Hadoop-HDFS
 ==========
 Pure PHP unified wrapper for WebHDFS and CLI `hadoop fs`.
 Provides single interface for both, so you can decide which one to use depending on your tasks.
