@@ -27,7 +27,7 @@ $hdfs->configure($host, $port, $user);
 Change wrapper for local filesystem.
 Use it if you need hdfs to interact with another remote service instead of local FS
 ```php
-$hdfs->setFilesystemWrapper (FilesystemWrapper $localfs)
+$hdfs->setFilesystemWrapper (\Hdfs\FilesystemWrapper $localfs)
 ```
 
 Upload $localFile to Hadoop at $hdfsFile path
@@ -62,7 +62,7 @@ $hdfs->removeDir ($hdfsDir) ;
 ```
 
 List contents of $hdfsDir directory.
-Returns array of Hdfs\EntryStatus instances
+Returns array of \Hdfs\EntryStatus instances
 ```php
 $hdfs->readDir ($hdfsDir) ;
 ```
